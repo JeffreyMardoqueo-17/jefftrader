@@ -1,6 +1,9 @@
 "use client"
-import { Boton } from "@/components/boton";
-import Welcome from "@/components/welcome";
+
+import Welcome from "@/sections/welcome";
+import { PorqueSection } from "@/sections/porque";
+import QueSeAprende from "@/sections/QueSeAprende";
+import HerramientasTrading from "@/sections/HerramientasTrading";
 
 export default function Home() {
   const alerta = () => {
@@ -10,6 +13,9 @@ export default function Home() {
   return (
     <>
       <Welcome />
+      <PorqueSection />
+      <QueSeAprende />
+      <HerramientasTrading />
     </>
   );
 }

@@ -30,8 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-bagroundDark`}
       >
         <Header />
-        <main className="w-full h-screen bg-white dark:bg-bagroundDark mt-16">
-          <div className="container mx-auto pt-5 px-1">
+        <main className="w-full h-screen bg-white dark:bg-bagroundDark">
+          <div className="container mx-auto px-1">
             {children}
           </div>
         </main>

@@ -78,7 +78,7 @@ const Header: React.FC = () => {
     );
 
     return (
-        <header className="border-b bg-white dark:bg-bagroundDarkPlus transition-colors">
+        <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-bagroundDarkPlus/30 border-b dark:border-neutral-900 transition-colors z-50">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <h1 className="text-3xl font-bold text-primary dark:text-white">
                     JeffTrade
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 <div className="flex items-center space-x-4">
                     <button
                         onClick={toggleDarkMode}
-                        className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                        className="p-2 rounded-full dark:bg-bagroundDarkPlus hover:bg-gray-200 dark:hover:bg-bagroundDark transition-colors"
                         aria-label="Toggle Dark Mode"
                     >
                         {isDarkMode ? (
@@ -102,14 +102,14 @@ const Header: React.FC = () => {
                     {/* Icono de la amburguesitaaaaaaaa */}
                     <button
                         onClick={toggleMenu}
-                        className="p-2 rounded-full bg-gray-100 dark:bg-bagroundDarkPlus hover:bg-gray-200 dark:hover:bg-bagroundDark  md:hidden"
+                        className="p-2 rounded-full dark:bg-bagroundDarkPlus hover:bg-gray-200 dark:hover:bg-bagroundDark  md:hidden"
                         aria-label="Toggle Menu"
                     >
                         <FaBars className="h-6 w-6 text-gray-800 dark:text-gray-200" />
                     </button>
                 </div>
             </div>
-            <div className={`fixed inset-0  bg-opacity-50 z-50 transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed inset-0 h-screen bg-opacity-50 z-50 transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="absolute top-0 right-0 w-1/2 h-full bg-white dark:bg-bagroundDarkPlus shadow-lg flex flex-col">
                     <button
                         onClick={closeMenu}

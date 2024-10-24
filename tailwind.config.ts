@@ -6,6 +6,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -18,6 +19,9 @@ const config: Config = {
         bagroundDark: "#0f0f10",
         bagroundDarkPlus: "#0a0a0a",
         textDark: "#fffff",
+
+        rojo: "#d50101",
+        verde: "#006f03",
       },
     },
   },
